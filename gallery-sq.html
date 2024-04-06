@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria - Vila Fjorald, Sarande, Albania</title>
+    <title>Galeria - Vila Fjorald , Sarande , Albania</title>
     <meta name="description"
         content="You can contact us at any time we will provide you with all the necessary information about our vila, Booking &amp; Reservation." />
     <meta name="keywords"
         content="Vila Fjorald , Vlorë , Albania , Hotel , Free Parking , Travel, Vacation , Wifi , Family Room , Non-Smoking Rooms">
-    <link rel="icon" type="image/x-icon" href="assets/icon/vila-fjoraldLogo.png">
+    <link rel="icon" type="image/x-icon" href="assets/icon/vila-fjoraldLogo.png" id="tablogo">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--prova-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <!-- My CSS -->
     <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg fixed-top text-center navbar">
@@ -44,10 +48,10 @@
                             <a href="contact-sq.html" class="nav-link hover-underline">Kontakt</a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a href="contact-sq.html" class="nav-link"><img src="assets/icon/ALB.png" width="23px"></a>
+                            <a href="gallery-sq.html" class="nav-link"><img src="assets/icon/ALB.png" width="23px"></a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a href="contact.html" class="nav-link"><img src="assets/icon/UK.png" width="23px"></a>
+                            <a href="gallery.html" class="nav-link"><img src="assets/icon/UK.png" width="23px"></a>
                         </li>
                         <li style="justify-content: center;display: flex;">
                             <a class="link-btn link-btn dis0" href="contact-sq.html">
@@ -61,11 +65,13 @@
         </nav>
     </header>
     <main>
-        <div class="bg-images background-tint">
-            <section class="container">
-                <h1 class="textin">Galeria</h1>
-            </section>
-        </div>
+        <div class="bg-images"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('assets/image/Photo-63-2.jpg') center/cover no-repeat fixed;">
+        <section class="container text-center">
+            <h1 style="text-align: center;color: white;  font-size: 60px;">
+                Galeria</h1>
+        </section>
+    </div>
         <section>
             <div class="bottom-section">
                 <div class="options" style="align-items: center;padding-bottom: 40px;">
@@ -74,66 +80,91 @@
                     <button class="btn btn-default filter-button" data-filter="hotel">Vila</button>
                     <button class="btn btn-default filter-button" data-filter="other">Të tjera</button>
                 </div>
-                <div class="gallery row container" style="background-color: unset;">
-                    <!-- Gallery Items -->
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter other">
-                        <img src="assets/image/273350.jpg" class="img-fluid" loading="lazy"
-                            onclick="openModal();currentSlide(1)">
-                    </div>
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter other">
-                        <img src="assets/image/273352.jpg" class="img-fluid" loading="lazy"
-                            onclick="openModal();currentSlide(2)">
-                    </div>
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hotel">
-                        <img src="assets/image/273354.jpg" class="img-fluid" loading="lazy"
-                            onclick="openModal();currentSlide(3)">
-                    </div>
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hotel">
-                        <img src="assets/image/273356.jpg" class="img-fluid" loading="lazy"
-                            onclick="openModal();currentSlide(4)">
-                    </div>
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hotel">
-                        <img src="assets/image/273357.jpg" class="img-fluid" loading="lazy"
-                            onclick="openModal();currentSlide(5)">
-                    </div>
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter other">
-                        <img src="assets/image/273358.jpg" class="img-fluid" loading="lazy"
-                            onclick="openModal();currentSlide(6)">
+                <div class="container py-5 ">
+                    <div class="row gy-3">
+                        <!-- Gallery Items -->
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hotel">
+                            <a data-fancybox="gallery" data-src="assets/image/1.webp" class="img-fluid"
+                                data-caption="Dhoma Ndenjes">
+                                <img src="assets/image/1.webp" />
+                            </a>
+                        </div>
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter room">
+                            <a data-fancybox="gallery" data-src="assets/image/20.webp" data-caption="Dhoma e Parë">
+                                <img src="assets/image/20.webp" />
+                            </a>
+                        </div>
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter room">
+                            <a data-fancybox="gallery" data-src="assets/image/21.webp" data-caption="Dhoma e Dytë">
+                                <img src="assets/image/21.webp" />
+                            </a>
+                        </div>
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter room">
+                            <a data-fancybox="gallery" data-src="assets/image/9.jpg" data-caption="Dhoma e Tretë">
+                                <img src="assets/image/9.jpg" />
+                            </a>
+                        </div>
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hotel">
+                            <a data-fancybox="gallery" data-src="assets/image/4.webp" data-caption="Kuzhina">
+                                <img src="assets/image/4.webp" />
+                            </a>
+                        </div>
+
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hotel">
+                            <a data-fancybox="gallery" data-src="assets/image/10.webp" data-caption="Banjo">
+                                <img src="assets/image/10.webp" />
+                            </a>
+                        </div>
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hotel">
+                            <a data-fancybox="gallery" data-src="assets/image/11.webp" data-caption="Dush Privat">
+                                <img src="assets/image/11.webp" />
+                            </a>
+                        </div>
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hotel">
+                            <a data-fancybox="gallery" data-src="assets/image/12.webp" data-caption="Xhakuzi">
+                                <img src="assets/image/12.webp" />
+                            </a>
+                        </div>
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hotel">
+                            <a data-fancybox="gallery" data-src="assets/image/16.webp" data-caption="Prona">
+                                <img src="assets/image/16.webp" />
+                            </a>
+                        </div>
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hotel">
+                            <a data-fancybox="gallery" data-src="assets/image/15.webp" data-caption="Ballkon">
+                                <img src="assets/image/15.webp" />
+                            </a>
+                        </div>
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hotel">
+                            <a data-fancybox="gallery" data-src="assets/image/13.webp" data-caption="Ballkon">
+                                <img src="assets/image/13.webp" />
+                            </a>
+                        </div>
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter other">
+                            <a data-fancybox="gallery" data-src="assets/image/14.webp" data-caption="Kopshtu">
+                                <img src="assets/image/14.webp" />
+                            </a>
+                        </div>
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter other">
+                            <a data-fancybox="gallery" data-src="assets/image/23.jpg" data-caption="Parkim">
+                                <img src="assets/image/23.jpg" />
+                            </a>
+                        </div>
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter other">
+                            <a data-fancybox="gallery" data-src="assets/image/Photo-63-2.jpg" data-caption="Zona Jashtë">
+                                <img src="assets/image/Photo-63-2.jpg" />
+                            </a>
+                        </div>
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hotel">
+                            <a data-fancybox="gallery" data-src="assets/image/3.webp" data-caption="Dhoma Ndenjes">
+                                <img src="assets/image/3.webp" />
+                            </a>
+                        </div>
+
                     </div>
                 </div>
-            </div>
         </section>
-        <div id="myModal" class="modal" onclick="closeModal()">
-            <span class="close">&times;</span>
-            <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
-            <span class="next" onclick="plusSlides(1)">&#10095;</span>
-            <div class="modal-content">
-                <img class="mySlides" src="assets/image/273350.jpg" style="display: block;
-                width: 50%;
-                height: auto;
-                margin: 50px auto;">
-                <img class="mySlides" src="assets/image/273352.jpg" style="display: block;
-                width: 50%;
-                height: auto;
-                margin: 50px auto;">
-                <img class="mySlides" src="assets/image/273354.jpg" style="display: block;
-                width: 50%;
-                height: auto;
-                margin: 50px auto;">
-                <img class="mySlides" src="assets/image/273356.jpg" style="display: block;
-                width: 50%;
-                height: auto;
-                margin: 50px auto;">
-                <img class="mySlides" src="assets/image/273357.jpg" style="display: block;
-                width: 50%;
-                height: auto;
-                margin: 50px auto;">
-                <img class="mySlides" src="assets/image/273358.jpg" style="display: block;
-                width: 50%;
-                height: auto;
-                margin: 50px auto;">
-            </div>
-        </div>
+
         <section class="footer_wrapper  mt-md-0 pb-0 ">
             <div class="container pb-3">
                 <div class="row">
@@ -153,7 +184,7 @@
                                 <ul class="list-unstyled">
                                     <li><a href="https://maps.app.goo.gl/XWsmLxhdFdzE1MMc6" class="ft-text"><i
                                                 class="fa fa-home"></i>
-                                            &nbsp; Rruga Skënderbeu, 9701 Çukë, Albania
+                                            &nbsp; Rruga Skënderbeu, Çukë, Albania
                                         </a></li><br>
                                     <li><a href="tel: +491727950978" class="ft-text"><i class="fa fa-phone"></i>
                                             &nbsp; +49 172 7950978</a>
@@ -165,13 +196,13 @@
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <h5 class="footer-link-d" style="color: #ff934f;">Useful Links:</h5>
+                            <h5 class="footer-link-d" style="color: #ff934f;">Menu:</h5>
                             <ul class="p-0 footer-ul">
-                                <li><a href="index.html" class="ft-text">Home</a></li>
-                                <li><a href="rooms.html" class="ft-text">Rooms</a></li>
-                                <li><a href="gallery.html" class="ft-text">Gallery</a></li>
-                                <li><a href="about.html" class="ft-text">About Us</a></li>
-                                <li><a href="contact.html" class="ft-text">Contact</a></li>
+                                <li><a href="index-sq.html" class="ft-text">Kryefaqje</a></li>
+                                <li><a href="rooms-sq.html" class="ft-text">Dhomat</a></li>
+                                <li><a href="gallery-sq.html" class="ft-text">Galeria</a></li>
+                                <li><a href="about-sq.html" class="ft-text">Rreth Nesh</a></li>
+                                <li><a href="contact-sq.html" class="ft-text">Kontakt</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6">
@@ -186,7 +217,7 @@
                     <div class="container-fluid copyright-section">
                         <p class="copyright">
                             Copyright ©
-                            <script>document.write(new Date().getFullYear());</script> Foris's Rooms | Powered by
+                            <script>document.write(new Date().getFullYear());</script> Foris's Rooms | Mundësuar Nga
                             <a href="https://intermedia.al/" target="_blank"><img src="assets/icon/intermediaLogo1.png"
                                     width="120px">
                             </a>
@@ -196,6 +227,8 @@
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const filterButtons = document.querySelectorAll('.filter-button');
@@ -212,47 +245,13 @@
                 });
             });
         });</script>
+
     <script>
-        let slideIndex = 1;
-    
-        function openModal() {
-            document.getElementById('myModal').style.display = 'block';
-        }
-    
-        function closeModal() {
-            document.getElementById('myModal').style.display = 'none';
-        }
-    
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-            // Stop event propagation to prevent closing modal
-            event.stopPropagation();
-        }
-    
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-    
-        function showSlides(n) {
-            let i;
-            const slides = document.getElementsByClassName('mySlides');
-            if (n > slides.length) { slideIndex = 1; }
-            if (n < 1) { slideIndex = slides.length; }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = 'none';
-            }
-            slides[slideIndex - 1].style.display = 'block';
-        }
-    
-        // Close modal when clicking outside of the photo
-        window.onclick = function(event) {
-            const modal = document.getElementById('myModal');
-            if (event.target === modal) {
-                closeModal();
-            }
-        };
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            //
+        });    
     </script>
-    
-    <script src="script.js"></script>
+
 </body>
+
 </html>

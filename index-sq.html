@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sq">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kryefaqja - Vila Fjorald, Sarande, Albania</title>
+    <title>Vila Fjorald - Sarande, Albania</title>
     <meta name="description"
         content="E vendosur në Çukë në qarkun e Vlorës, me plazhin Mango aty pranë, Villa Fjorald ofron akomodim me WiFi falas dhe parkim privat falas." />
     <meta name="keywords"
         content="Vila Fjorald , Vlorë , Albania , Hotel , Free Parking , Travel, Vacation , Wifi , Family Room , Non-Smoking Rooms">
     <link rel="icon" type="image/x-icon" href="assets/icon/vila-fjoraldLogo.png">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- My CSS -->
     <link rel="stylesheet" href="stylesheet.css">
 </head>
@@ -66,16 +74,16 @@
     </header>
     <main>
         <section id="banner">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div id="HeadCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/image/Photo-6.jpg" class="d-block w-100" alt="Slide 1">
+                        <img src="assets/image/17.webp" class="d-block w-100" alt="Slide 1">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/image/273352.jpg" class="d-block w-100" alt="Slide 2">
+                        <img src="assets/image/9.jpg" class="d-block w-100" alt="Slide 2">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/image/273354.jpg" class="d-block w-100" alt="Slide 3">
+                        <img src="assets/image/1.webp" class="d-block w-100" alt="Slide 3">
                     </div>
                 </div>
             </div>
@@ -84,36 +92,28 @@
                 <div class="container">
                     <div class="porperty-details">
                         <div class="border">
-                            <!-- .logo -->
                             <div class="logo" style="text-align: center;">
                                 <a href="contact-sq.html"><img src="assets/icon/vila-fjoraldLogo.png" style="height: 50px;
                                         margin-top: 10px;" alt="logo"></a>
-                            </div><!-- /.logo -->
-                            <!-- .address -->
-                            <div class="address" style="text-align: center;">
-                                <p>Rruga Skënderbeu,<br> 9701 Çukë, Albania</p>
-                            </div><!-- /.address -->
-                            <!-- .options -->
+                            </div>
                             <div class="options" style="text-align: center;">
-                                <ul style="padding: 0px;">
-                                    <li><span class="number">2</span> Bathrooms
-                                    </li>
-                                    <li><span class="number">3</span> Bedrooms
-                                    </li>
-                                    <li><span class="number">1</span> Kitchen</li>
-                                </ul>
-                            </div><!-- .options -->
-                            <div class="options" style="text-align: center;">
-                                <ul style="padding: 0px;">
-                                    <li><span class="number">2</span> Bathrooms
-                                    </li>
-                                    <li><span class="number">3</span> Bedrooms
-                                    </li>
-                                    <li><span class="number">1</span> Kitchen</li>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://maps.app.goo.gl/XWsmLxhdFdzE1MMc6" class="hd-text"><i
+                                                class="fa fa-home"></i>
+                                            &nbsp; Rruga Skëndërbeu, Çukë, Shqipëri
+                                        </a></li><br>
+                                    <li><a href="tel: +491727950978" class="hd-text"><i class="fa fa-phone"></i>
+                                            &nbsp; +49 172 7950978</a>
+                                    </li><br>
+                                    <li><a href="mailto:vilafjorald@gmail.com" class="hd-text"><i
+                                                class="fa fa-envelope"></i> &nbsp; vilafjorald@gmail.com
+                                        </a></li>
                                 </ul>
                             </div>
                             <div class="text-center" style="padding-top: 40px;">
-                                <button>p</button>
+                                <button>
+                                    <a href="contact.html" class="btn2"><span class="spn2">Contact</span></a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -124,48 +124,40 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 text-center-sm text-center-xs">
-                        <!-- .img-holder -->
                         <div class="img-holder">
-                            <img src="assets/image/Photo-6.jpg" alt="image" style="  max-width: 100%;
-                                max-height: 100%;
-                                width: auto;
-                                height: 500px;margin-top: 10px;">
-                        </div><!-- /.img-holder -->
+                            <img src="assets/image/18.webp" alt="image" style="object-fit: none;">
+                        </div>
                     </div>
-                    <!-- .about-text -->
                     <div class="col-lg-8 col-md-8 about-text">
-                        <!-- .section-title -->
                         <div class="section-title">
-                            <span>A Few Words About House</span>
-                            <h2><span>apartt luxuary villa</span></h2>
-                        </div><!-- /.section-title -->
-                        <p>Apart from the luxurious amenities, the APARTT Luxury Villa also provides a range of
-                            personalized services to make guests' stay even more enjoyable. The friendly and
-                            professional staff is always on hand to assist with any requests or queries, and guests can
-                            avail of services like private chef, chauffeur, and housekeeping.</p>
-                        <p>The location of the villa is another highlight of this luxurious accommodation option. It is
-                            situated in a tranquil and serene location, away from the hustle and bustle of the city, yet
-                            within easy reach of popular tourist attractions, restaurants, and shopping areas.</p>
+                            <span>Disa Fjalë Për Vilën</span>
+                            <h2><span class="sec2spn">Vila Fjorald</span></h2>
+                        </div>
+                        <p>E vendosur në Çukë në qarkun e Vlorës, me plazhin Mango pranë, Villa Fjorald përmban
+                            akomodim me WiFi falas dhe parkim privat falas. Mysafirët mund të pushojnë në kopshtin e
+                            pronës. Plazhi Flamingo është 2.2 km nga banesa, ndërsa plazhi Santa Quaranta është 2.8 km
+                            nga prona. Aeroporti më i afërt është Aeroporti i Janinës, 97 km nga Villa Fjorald.</p>
+                        <p>Një vilë vërtet e jashtëzakonshme jo vetëm që krenohet me pajisje luksoze dhe pamje të lë pa
+                            frymë, por edhe nxit një ndjenjë qetësie dhe ekskluziviteti, duke siguruar që çdo mysafir të ndihet vërtet i
+                            përkëdhelur dhe u rinovuan gjatë qëndrimit të tyre. Qoftë për të pushuar pranë oazit buzë pishinës apo
+                            për të eksploruar atraksionet e afërta, çdo moment është i mbushur me një ndjenjë luksi dhe të pashembullt
+                            mikpritje.</p>
                         <ul class="room-amount text-center">
                             <li>
-                                <i class="flaticon-shower17"></i>
-                                <h4>Banjo</h4>
-                                <span>2</span>
+                                <img src="assets/icon/free-parking.png" alt="Parkim Falas">
+                                <h4>Parkim Falas</h4>
                             </li>
                             <li>
-                                <i class="flaticon-beds12"></i>
-                                <h4>Dhoma</h4>
-                                <span>3</span>
+                                <img src="assets/icon/free-wifi.png" alt="Wifi Falas">
+                                <h4>Wifi Falas</h4>
                             </li>
                             <li>
-                                <i class="flaticon-bed34"></i>
-                                <h4>Xhakuzi</h4>
-                                <span>1</span>
+                                <img src="assets/icon/family.png" alt="Dhoma Familjare">
+                                <h4>Dhoma Familjare</h4>
                             </li>
                             <li>
-                                <i class="flaticon-furniture25"></i>
-                                <h4>Salla</h4>
-                                <span>2</span>
+                                <img src="assets/icon/no-smoking.png" alt="Dhoma Pa Duhan">
+                                <h4>Dhoma Pa Duhan</h4>
                             </li>
                         </ul>
                     </div>
@@ -179,36 +171,50 @@
                         <div class="row">
                             <div class="col-lg-5 col-md-12 col-sm-12 full-img">
                                 <div class="img-holder">
-                                    <img src="assets/image/Photo-63-2.jpg" alt="image">
+                                    <img src="assets/image/Photo-63-2.jpg" alt="image" style="object-fit: none;">
                                 </div>
                             </div>
                             <div class="col-lg-7 col-md-12 col-sm-12 property-highlight-text">
                                 <div class="section-title">
-                                    <h2><span>Property Highlights</span></h2>
+                                    <h2><span>Pikat Kryesore</span></h2>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="single-property-highlight">
-                                            <h3>Fabulous view</h3>
-                                            <p>hello.</p>
+                                            <img src="assets/icon/lounge.png" alt="">
+                                            <h3>Relaksim dhe pamje në natyrë</h3>
+                                            <p> Shijoni bukurinë natyrore me pajisje si kopsht, tarracë, ballkon,
+                                                dhe zona e jashtme e ngrënies. Merrni frymë në ajër të pastër dhe zhyteni në pamjen piktoreske
+                                                pamje për një përvojë vërtet të qetë.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="single-property-highlight">
-                                            <h3>Large Play Ground</h3>
-                                            <p>hello.</p>
+                                            <img src="assets/icon/convenient.png" alt="">
+                                            <h3> Komoditet dhe komoditet</h3>
+                                             <p>Përfitoni nga pajisje të tilla si parkimi, check-in/check-out i shpejtë, ajri
+                                                 kondicioner, dhe Wi-Fi pa pagesë. Këto karakteristika sigurojnë një qëndrim pa probleme,
+                                                 duke ju lejuar të përqendroheni për të shijuar kohën tuaj.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="single-property-highlight">
-                                            <h3>Quiet Neighbourhood</h3>
-                                            <p>hello</p>
+                                            <img src="assets/icon/love.png" alt="">
+                                            <h3>Rehati të ngjashme me shtëpinë</h3>
+                                             <p>Gëzohuni me komoditetin e shtëpisë me pajisje të tilla si një pajisje plotësisht
+                                                 kuzhinë, zonë e bollshme shtrojë, tavolinë ngrënie dhe TV me ekran të sheshtë.
+                                                 Pavarësisht nëse përgatitni vaktet së bashku ose relaksoheni me të preferuarin tuaj
+                                                 tregon.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="single-property-highlight">
-                                            <h3>Xhakuzi</h3>
-                                            <p>hello</p>
+                                            <img src="assets/icon/man.png" alt="">
+                                            <h3>Kujdesi dhe relaksimi personal</h3>
+                                             <p>Përkëdhel veten me pajisje të tilla si banjo private, banjë, dush,
+                                                 tualetin, tharëse flokësh dhe pantofla. Kënaquni në momente relaksi
+                                                 dhe përtëritje në privatësinë e hapësirës suaj, duke siguruar një qetësi
+                                                 qëndro.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -223,29 +229,182 @@
                 <section id="luxury-villa">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-3">
+                            <div class="col-lg-3" style="align-content: center;">
                                 <div class="section-title">
-                                    <span>A Few Words About House</span>
-                                    <h2><span>Luxuary Villa</span></h2>
+                                    <span>Disa Fjalë Për Vilën</span>
+                                    <h2><span style="font-size: 30px;">Vila Fjorald</span></h2>
                                 </div>
                             </div>
                             <div class="col-lg-9">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati repudiandae sed
-                                    aut, magni dolores delectus ad inventore natus architecto laudantium iure quibusdam
-                                    amet pariatur ipsa rerum recusandae eveniet temporibus placeat!.</p>
+                                <p style="font-size: 25px;">
+                                    E vendosur në Çukë në qarkun e Vlorës, me plazhin Mango aty
+                                    pranë, Villa Fjorald ofron akomodim me WiFi falas dhe parkim privat falas.</p>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
         </section>
-        <section
-            class="main-bg d-flex flex-column justify-content-center align-items-center text-center background-tint"
+        <section class="main-bg d-flex flex-column justify-content-center align-items-center text-center bg-images"
+            style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('assets/image/13.webp') center/cover no-repeat fixed;"
             id="section4">
             <h1 style="color: #f4ac45; margin-bottom: 30px;text-align: center;">
-                "Mikëpritja e pashoqe, komoditeti juaj prioriteti ynë."
+                "Na besoni për një përvojë të jashtëzakonshme!"
             </h1><br>
-            <h1>hh</h1>
+            <a class="link-btn link-btn dis1" href="contact.html">
+                Rezervo Tani</a>
+        </section>
+        <section id="sectionlst" style="padding-bottom: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="container">
+                        <div class="heading_top flex1">
+                            <div class="heading">
+                                <br>
+                                <h2 class="headline-1 section-title">Galeria E Vilës</h2>
+                            </div>
+                            <div class="button">
+                                <button class="btn3">
+                                    <a href="gallery.html">
+                                        <span>Galeria</span></a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                                <div class="owl-stage-outer" style="max-width: 100%; overflow: hidden;">
+                                    <div class="owl-stage">
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/14.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/16.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/18.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/2.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/4.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/6.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/8.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/10.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/12.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/14.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active">
+                                            <div class="item">
+                                                <img src="assets/image/10.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active">
+                                            <div class="item">
+                                                <img src="assets/image/12.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active">
+                                            <div class="item">
+                                                <img src="assets/image/14.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active">
+                                            <div class="item">
+                                                <img src="assets/image/16.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active">
+                                            <div class="item">
+                                                <img src="assets/image/18.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned active">
+                                            <div class="item">
+                                                <img src="assets/image/14.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/16.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/18.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/20.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/20.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/273352.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/Photo-63-2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/10.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/12.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned">
+                                            <div class="item">
+                                                <img src="assets/image/14.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
         <section class="footer_wrapper  mt-md-0 pb-0 ">
             <div class="container pb-3">
@@ -308,15 +467,63 @@
                 </div>
             </div>
         </section>
-    </main>
+    </main><!--OwlCarousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--PopperJs-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-Qs8zj3zJRjvziVjCbREkH5a0SGYig+yzLq4/AJF2Ooqhlb4uWtULGzPu1BIYYLXK"
         crossorigin="anonymous"></script>
+    <!--BootStrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
+    <!--MouseWheel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"
+        integrity="sha512-rCjfoab9CVKOH/w/T6GbBxnAH5Azhy4+q1EXW5XEURefHbIkRbQ++ZR+GBClo3/d3q583X/gO4FKmOFuhkKrdA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"
+        integrity="sha512-c5JDIvikBZ6tuz+OyaFsHKvuyg+tCug3hf41Vmmd5Yz9H5anj4vZOqlBV5PJoEbBJGFCgKoRT9YAgko4JS6/Qw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--My Script-->
     <script src="script.js"></script>
+    <script>
+        $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                loop: true,
+                nav: true,
+                margin: 10,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    960: {
+                        items: 5
+                    },
+                    1200: {
+                        items: 6
+                    }
+                }
+            });
+            owl.on('mousewheel', '.owl-stage', function (e) {
+                if (e.deltaY > 0) {
+                    owl.trigger('next.owl');
+                } else {
+                    owl.trigger('prev.owl');
+                }
+                e.preventDefault();
+            });
+        })
+
+    </script>
 </body>
 
 </html>
