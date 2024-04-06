@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria - Vila Fjorald, Sarande, Albania</title>
     <meta name="description"
-        content="E vendosur në Çukë në qarkun e Vlorës, me plazhin Mango aty pranë, Villa Fjorald ofron akomodim me WiFi falas dhe parkim privat falas." />
+        content="You can contact us at any time we will provide you with all the necessary information about our vila, Booking &amp; Reservation." />
     <meta name="keywords"
         content="Vila Fjorald , Vlorë , Albania , Hotel , Free Parking , Travel, Vacation , Wifi , Family Room , Non-Smoking Rooms">
     <link rel="icon" type="image/x-icon" href="assets/icon/vila-fjoraldLogo.png">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -46,10 +44,10 @@
                             <a href="contact-sq.html" class="nav-link hover-underline">Kontakt</a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a href="gallery-sq.html" class="nav-link"><img src="assets/icon/ALB.png" width="23px"></a>
+                            <a href="contact-sq.html" class="nav-link"><img src="assets/icon/ALB.png" width="23px"></a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a href="gallery.html" class="nav-link"><img src="assets/icon/UK.png" width="23px"></a>
+                            <a href="contact.html" class="nav-link"><img src="assets/icon/UK.png" width="23px"></a>
                         </li>
                         <li style="justify-content: center;display: flex;">
                             <a class="link-btn link-btn dis0" href="contact-sq.html">
@@ -65,49 +63,75 @@
     <main>
         <div class="bg-images background-tint">
             <section class="container">
-                <h1 class="textin">Kontakt</h1>
+                <h1 class="textin">Galeria</h1>
             </section>
         </div>
-        <div class="container" id="CContact">
-            <div class="google-maps-contact-content">
-                <!-- Contact Items -->
-                <div class="row0" style="display:flex; justify-content: space-between;">
-                    <!-- Single Contact Info -->
-                    <div class="service-card">
-                        <div class="card-icon">
-                            <i class="fas fa-phone fa-2x" style="color:#2f2626;"></i>
-                        </div>
-                        <h3 class="h3 title"><a href="tel: +491727950978" class="contact0">
-                                +49 172 7950978
-                            </a>
-                        </h3>
+        <section>
+            <div class="bottom-section">
+                <div class="options" style="align-items: center;padding-bottom: 40px;">
+                    <button class="btn btn-default filter-button" data-filter="all">Fotot</button>
+                    <button class="btn btn-default filter-button" data-filter="room">Dhomat</button>
+                    <button class="btn btn-default filter-button" data-filter="hotel">Vila</button>
+                    <button class="btn btn-default filter-button" data-filter="other">Të tjera</button>
+                </div>
+                <div class="gallery row container" style="background-color: unset;">
+                    <!-- Gallery Items -->
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter other">
+                        <img src="assets/image/273350.jpg" class="img-fluid" loading="lazy"
+                            onclick="openModal();currentSlide(1)">
                     </div>
-                    <div class="service-card">
-                        <div class="card-icon">
-                            <i class="fas fa-envelope fa-2x" style="color:#2f2626;"></i>
-                        </div>
-                        <h3 class="h3 title"><a href="mailto:vilafjorald@gmail.com"
-                                class="contact0">vilafjorald@gmail.com
-                            </a>
-                        </h3>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter other">
+                        <img src="assets/image/273352.jpg" class="img-fluid" loading="lazy"
+                            onclick="openModal();currentSlide(2)">
                     </div>
-                    <div class="service-card">
-                        <div class="card-icon">
-                            <i class="fas fa-location-dot fa-2x" style="color:#2f2626;"></i>
-                        </div>
-                        <h3 class="h3 title"><a href="https://maps.app.goo.gl/XWsmLxhdFdzE1MMc6" class="contact0"> Rruga
-                                Skënderbeu, 9701 Çukë, Albania
-                            </a>
-                        </h3>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hotel">
+                        <img src="assets/image/273354.jpg" class="img-fluid" loading="lazy"
+                            onclick="openModal();currentSlide(3)">
+                    </div>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hotel">
+                        <img src="assets/image/273356.jpg" class="img-fluid" loading="lazy"
+                            onclick="openModal();currentSlide(4)">
+                    </div>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hotel">
+                        <img src="assets/image/273357.jpg" class="img-fluid" loading="lazy"
+                            onclick="openModal();currentSlide(5)">
+                    </div>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter other">
+                        <img src="assets/image/273358.jpg" class="img-fluid" loading="lazy"
+                            onclick="openModal();currentSlide(6)">
                     </div>
                 </div>
-                <!-- Google Maps -->
-                <div class="google-maps">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d392078.4961868774!2d20.033521!3d39.849295!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDUwJzU3LjUiTiAyMMKwMDInMDAuNyJF!5e0!3m2!1sen!2sus!4v1712057598911!5m2!1sen!2sus"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            </div>
+        </section>
+        <div id="myModal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+            <span class="next" onclick="plusSlides(1)">&#10095;</span>
+            <div class="modal-content">
+                <img class="mySlides" src="assets/image/273350.jpg" style="display: block;
+                width: 50%;
+                height: auto;
+                margin: 50px auto;">
+                <img class="mySlides" src="assets/image/273352.jpg" style="display: block;
+                width: 50%;
+                height: auto;
+                margin: 50px auto;">
+                <img class="mySlides" src="assets/image/273354.jpg" style="display: block;
+                width: 50%;
+                height: auto;
+                margin: 50px auto;">
+                <img class="mySlides" src="assets/image/273356.jpg" style="display: block;
+                width: 50%;
+                height: auto;
+                margin: 50px auto;">
+                <img class="mySlides" src="assets/image/273357.jpg" style="display: block;
+                width: 50%;
+                height: auto;
+                margin: 50px auto;">
+                <img class="mySlides" src="assets/image/273358.jpg" style="display: block;
+                width: 50%;
+                height: auto;
+                margin: 50px auto;">
             </div>
         </div>
         <section class="footer_wrapper  mt-md-0 pb-0 ">
@@ -141,13 +165,13 @@
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <h5 class="footer-link-d" style="color: #ff934f;">Menu:</h5>
+                            <h5 class="footer-link-d" style="color: #ff934f;">Useful Links:</h5>
                             <ul class="p-0 footer-ul">
-                                <li><a href="index-sq.html" class="ft-text">Kryefaqje</a></li>
-                                <li><a href="rooms-sq.html" class="ft-text">Dhomat</a></li>
-                                <li><a href="gallery-sq.html" class="ft-text">Galeria</a></li>
-                                <li><a href="about-sq.html" class="ft-text">Rreth Nesh</a></li>
-                                <li><a href="contact-sq.html" class="ft-text">Kontakt</a></li>
+                                <li><a href="index.html" class="ft-text">Home</a></li>
+                                <li><a href="rooms.html" class="ft-text">Rooms</a></li>
+                                <li><a href="gallery.html" class="ft-text">Gallery</a></li>
+                                <li><a href="about.html" class="ft-text">About Us</a></li>
+                                <li><a href="contact.html" class="ft-text">Contact</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6">
@@ -162,7 +186,7 @@
                     <div class="container-fluid copyright-section">
                         <p class="copyright">
                             Copyright ©
-                            <script>document.write(new Date().getFullYear());</script> Foris's Rooms | Mundësuar Nga
+                            <script>document.write(new Date().getFullYear());</script> Foris's Rooms | Powered by
                             <a href="https://intermedia.al/" target="_blank"><img src="assets/icon/intermediaLogo1.png"
                                     width="120px">
                             </a>
@@ -172,6 +196,63 @@
             </div>
         </section>
     </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterButtons = document.querySelectorAll('.filter-button');
+            const galleryItems = document.querySelectorAll('.gallery_product');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const filterValue = this.getAttribute('data-filter');
+                    galleryItems.forEach(item => {
+                        item.style.display = 'none';
+                        if (item.classList.contains(filterValue) || filterValue === 'all') {
+                            item.style.display = 'block';
+                        }
+                    });
+                });
+            });
+        });</script>
+    <script>
+        let slideIndex = 1;
+    
+        function openModal() {
+            document.getElementById('myModal').style.display = 'block';
+        }
+    
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+            // Stop event propagation to prevent closing modal
+            event.stopPropagation();
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName('mySlides');
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slides[slideIndex - 1].style.display = 'block';
+        }
+    
+        // Close modal when clicking outside of the photo
+        window.onclick = function(event) {
+            const modal = document.getElementById('myModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        };
+    </script>
+    
     <script src="script.js"></script>
 </body>
 </html>
