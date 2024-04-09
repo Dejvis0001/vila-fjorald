@@ -486,7 +486,7 @@ button {text-decoration: none;border: none;background-color: transparent;}
 .slider-0,.slider-1 {position: relative;overflow: hidden;max-width: 100%;}
 .slides-0,.slides-1 {display: flex;transition: transform 0.5s ease;}
 .slide-0,.slide-1 {flex: 0 0 auto;width: 100%;}
-.slide-0 img,.slide-1 img { width: 100%;height: 100%;object-fit: cover;max-height: 450px;
+.slide-0 img,.slide-1 img { width: 100%;height: 100%;object-fit: cover;max-height: 450px;border-radius: 15px;
 }
 .prev-0,.prev-1 {
     position: absolute;
